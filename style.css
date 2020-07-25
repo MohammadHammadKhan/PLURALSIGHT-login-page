@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    background-color: #181818;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+
+}
+
+.login-info{
+    flex-basis: 40vw;
+    /* flex: 1; */
+    padding-top: 0.7rem;
+    /* width: 80%; */
+    
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 60%;
+    /* text-align: center; */
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+    text-align: center;
+    background-image: url('https://image.ibb.co/cO9Lxq/login-bg.jpg');
+}
+
+
+
+.trial{
+    flex-basis: 60vw;
+    /* flex: 1; */
+    /* width: 80%; */
+    
+}
+.login-info .logo img{
+    width: 200px
+}
+.login-info .logo{
+    margin-bottom: 0.5rem;
+}
+.login-info .myform{
+    width: 60%;
+}
+.login-info label{
+    display: block;
+    
+    font-size: 0.9rem;
+    /* line-height: 2rem; */
+    font-weight: 500;
+    margin-bottom: 0.4em;
+}
+
+.login-info input{
+margin-bottom: 1.9rem;
+}
+.login-info .myform input[type="email"],
+.login-info .myform input[type="password"],
+.login-info .myform input[type="submit"]{
+    width: 100%;
+}
+.login-info input[type="email"],.login-info input[type="password"]{
+    margin-bottom: 1.9rem;
+    background: none;
+    padding: 0.5rem;
+    border: 1px solid #555;
+    
+    }
+
+    .login-info input[type="submit"]{
+        margin-bottom: 1.9rem;
+        background: #f96816;
+        color: #ffffff;
+        padding: 0.9rem;
+        border: 0;
+        border-radius: 2px;
+        
+        cursor: pointer;
+        }
+    
+        .login-info a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            color: #f4f4f4;
+            margin-bottom: 0.9rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .login-info .or{
+            text-align: center;
+        }
+
+        .login-info .bar{
+            text-align: center;
+        }
+
+
+.login-info .signup{
+    text-align: center;
+}
+
+        .login-info .signup button{
+            margin-bottom: 1.9rem;
+            background: none;
+            color: #ffffff;
+            padding: 0.9rem;
+            border: 0;
+            border-radius: 2px;
+            border: 1px solid #ffffff;
+            cursor: pointer;
+            padding: 10px 40px;
+            /* text-align: center; */
+            margin-top: 1.6rem;
+            font-size: 0.98rem;
+    font-weight: 500;
+            }
+
+            .login-info .signup button:hover{
+                border-color: #ff7b39;
+                color: #ff7b39;
+            }
+
+.login-info .myform .or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-bottom: 1.2rem; */
+    
+}
+
+.login-info .myform .or .bar{
+  flex: auto;
+  background: #aaa;
+  height: 1px;
+  border: none;
+    
+}
+.login-info .myform .or span{
+padding: 10px;
+}
+
+
+.trial h1{
+    font-size: 3rem;
+    color: white;
+    /* width: 80%; */
+    /* text-align: center; */
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+}
+
+.trial button{
+    color: white;
+    border: 1px solid #ffffff;
+    background: none;
+    padding: 10px 40px;
+    font-size: 0.98rem;
+    font-weight: 500;
+    
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.trial button:hover{
+    border-color: #ff7b39;
+    color: #ff7b39;
+}
+
+.main-footer{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.main-footer a,.main-footer span{
+    display: inline;
+    color: #ff7b39;
+    text-decoration: underline;
+    
+}
+
+.main-footer div{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width:768px){
+    .right{
+        display: none;
+    }
+    body{
+        overflow: auto;
+    }
+
+  .left {
+    justify-content: start;
+    width: 100%;
+    margin-top: 4vh;
+  }
+
+  .login-info{
+      flex-basis: 100vw;
+      /* width: 100%; */
+      /* justify-content: center; */
+  }
+  .wrapper{
+      /* flex: none; */
+  }
+}
